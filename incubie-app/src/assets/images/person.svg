@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_person_white_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Page---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1385.000000, -20.000000)">
+        <g id="ic_person_white_24px" transform="translate(1378.000000, 13.000000)">
+            <path d="M21,21 C24.8675,21 28,17.8675 28,14 C28,10.1325 24.8675,7 21,7 C17.1325,7 14,10.1325 14,14 C14,17.8675 17.1325,21 21,21 Z M21,24.5 C16.3275,24.5 7,26.845 7,31.5 L7,35 L35,35 L35,31.5 C35,26.845 25.6725,24.5 21,24.5 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polygon id="Shape" points="0 0 42 0 42 42 0 42"></polygon>
+        </g>
+    </g>
+</svg>

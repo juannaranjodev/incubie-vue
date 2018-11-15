@@ -1,0 +1,21 @@
+{
+  "name": "Incubie App",
+  "short_name": "Incubie",
+  "icons": [
+    {
+      "src": "/images/logo192@1x.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo512@1x.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "orientation": "portrait",
+  "display": "standalone",
+  "background_color": "#454545",
+  "theme_color": "#7db0ca"
+}

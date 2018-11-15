@@ -1,0 +1,28 @@
+.board__list {
+
+  &__item {
+
+    > a {
+      transition: all $primary-transition
+
+      &:hover {
+        background: #f5f4f6 !important
+
+        .board__list__item__action {
+
+          &--reveal {
+            opacity: 1
+          }
+        }
+      }
+    }
+
+    &__action {
+
+      &--reveal {
+        opacity: 0
+        transition: opacity $primary-transition
+      }
+    }
+  }
+}

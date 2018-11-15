@@ -1,0 +1,65 @@
+@import '~@/assets/stylus/settings/_variables'
+
+.fade {
+  &-enter-active {
+    transition: opacity 1.6s;
+  }
+
+  &-leave-active {
+    transition: opacity .3s;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0
+  }
+}
+
+.fade-fast {
+  &-enter-active {
+    transition: opacity .2s;
+  }
+
+  &-leave-active {
+    transition: opacity .1s;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0
+  }
+}
+
+.scale-in {
+  &-enter-active {
+    transition: all .6s $transition.swing
+    transform: scale(1)
+  }
+
+  &-leave-active {
+    transition: all .3s $transition.swing
+    transform: scale(1)
+  }
+
+  &-enter {
+    opacity: .5
+    transform: scale(1.02)
+  }
+
+  &-leave-to {
+    opacity: 0
+    transform: scale(1.02)
+  }
+}
+
+.slide-in-from-right-enter-active {
+  transition: all $primary-transition
+}
+
+.slide-in-from-right-leave-active {
+  transition: all $secondary-transition
+}
+
+.slide-in-from-right-enter, .slide-in-from-right-leave-to {
+  transform: translateX(100%)
+}

@@ -1,0 +1,56 @@
+@import '~@/assets/stylus/settings/_variables'
+@import '~@/assets/stylus/settings/_colors'
+
+.theme--light {
+
+  .pulse-animation {
+    animation: pulse--light 1.8s infinite
+    animation-timing-function: $transition.fast-in-slow-out
+    border-radius: 50%
+    box-shadow: 0 0 0 rgba(0, 0, 0, .4)
+    //transform: scale(.9)
+  }
+
+}
+
+.theme--dark {
+
+  .pulse-animation {
+    animation: pulse--dark 1.8s infinite
+    animation-timing-function: $transition.fast-in-slow-out
+    border-radius: 50%
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .4)
+    transform: scale(.9)
+  }
+
+}
+
+@keyframes pulse--light {
+  0% {
+    //transform: scale(.9)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .4)
+  }
+  70% {
+    transform: scale(1)
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0)
+  }
+  100% {
+    //transform: scale(.9)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+  }
+}
+
+@keyframes pulse--dark {
+  0% {
+    transform: scale(.9)
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .4)
+  }
+  70% {
+    transform: scale(1)
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0)
+  }
+  100% {
+    transform: scale(.9)
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)
+  }
+}

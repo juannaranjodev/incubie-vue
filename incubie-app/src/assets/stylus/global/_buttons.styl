@@ -1,0 +1,28 @@
+@import '../settings/_variables.styl'
+
+.btn {
+  font-family: $button-font-family
+
+  &--collapsed {
+    min-width: auto !important
+  }
+
+  &--faded {
+    opacity: .68
+
+    &:hover {
+      opacity: 1
+    }
+  }
+}
+
+.btn__fab {
+  bottom: $spacers.three.y
+  right: $spacers.three.x
+  position: fixed
+  z-index: 4
+
+  &--pushed {
+    bottom: $spacers.three.y + $bottom-sheet-join-height
+  }
+}

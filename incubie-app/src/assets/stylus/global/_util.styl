@@ -1,0 +1,126 @@
+@import "~@/assets/stylus/settings/_variables"
+
+.ml-a {
+  margin-left: auto
+}
+
+.mr-a {
+  margin-right: auto
+}
+
+.u {
+  &__main-container {
+    padding: $spacers.two.y $spacers.two.x
+
+    @media $display-breakpoints.md-and-up {
+      margin: 0
+      padding: $spacers.four.y $spacers.four.x
+    }
+  }
+
+  &__fill-height {
+    height: 100%
+  }
+
+  &__geometric-bg {
+    background-image: url('/images/geometric-bg.jpg') !important
+    background-size: cover
+
+    &--faded {
+      background-image: url('/images/geometric-bg--faded.jpg') !important
+    }
+
+    &--dark {
+      background-image: url('/images/geometric-bg--dark.jpg') !important
+    }
+  }
+
+  &__clipped-container {
+    max-width: 600px !important
+  }
+
+  &__mobile-container {
+    margin: 0 auto
+    max-width: 326px !important
+  }
+
+  &__pulse {
+    border-radius: 50%
+    left: 0
+    position: absolute
+    top: 0
+    z-index: 500
+  }
+
+  &__column {
+    flex-direction: column
+  }
+
+  &__justify-end {
+    justify-content: flex-end !important
+  }
+
+  &__icon {
+    &--xlarge {
+      font-size: 54px !important
+    }
+  }
+
+  &__flat-list {
+    list-style: none
+    margin: 0
+    padding: 0
+  }
+
+  &__uppercase {
+    text-transform: uppercase
+  }
+
+  &__truncate {
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  }
+
+  &__empty-message {
+    margin: 0 auto
+    text-align: center
+    transform: translateY(-50%)
+
+    @media $display-breakpoints.md-and-up {
+      font-size: 24px
+    }
+  }
+
+  &__sort-by-group {
+    transform: translateY(3px)
+  }
+
+  &__underline {
+    text-decoration: underline
+  }
+
+  &__no-underline {
+    text-decoration: none
+
+    &:hover {
+      text-decoration: none
+    }
+  }
+
+  &__underline-on-hover {
+    text-decoration: none
+
+    &:hover {
+      text-decoration: underline
+    }
+  }
+
+  &__strikethrough {
+    text-decoration: line-through
+  }
+
+  &__collapsed-btn {
+    min-width: auto
+  }
+}

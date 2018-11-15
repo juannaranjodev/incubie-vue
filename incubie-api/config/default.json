@@ -1,0 +1,64 @@
+{
+  "host": "beta.incubie.com",
+  "port": 3030,
+  "public": "../public/",
+  "baseUrl": "https://beta.incubie.com",
+  "paginate": {
+    "default": 20,
+    "max": 1000
+  },
+  "authentication": {
+    "secret":
+      "cfdd3f4470ea1ce4123c5c53e7de438f46e86cd91d8c6c0df411c7d83b207833e3e7e99508488877c6d64d64a6288072758a58c67f68e5732846f9fb83639e396165479753ce52d521c759b5a14e70e7e38e1d3ee98f8fcc2537da43aa8a86558880239c407fd04f05367d1ac4691589d2e70b4f2bd80ba53b18cb1649ba3aa807ce2b9f80354f4935cb1b9f5ecc1b19f753777dea5dddfdfc00157e64036261e36edd9904177a66eb13f876693bd912b37d1fd13996861b6f0984f4561ed720aae674760abacf5633201cdc7c6369a17e5c8a125a05455ae6df7345744131c457ed87adc4de26630ab219ead5c261a7d5644c791d9bbdb35ad36302f73be167",
+    "strategies": ["jwt", "local"],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://incubie.com",
+      "subject": "anonymous",
+      "issuer": "incubie",
+      "algorithm": "HS256",
+      "expiresIn": "180d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password",
+      "entityUsernameField": "email",
+      "entityPasswordField": "password"
+    },
+    "google": {
+      "clientID":
+        "967379943729-nq4hv1q11bqbi7gb84bjb0vgl1iq6e7n.apps.googleusercontent.com",
+      "clientSecret": "MXapdxRe79sePjWbSEnuYvp2",
+      "successRedirect": "/",
+      "scope": ["profile openid email"],
+      "email": "noreply@incubie.com",
+      "password": "0cc@mUX99"
+    },
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "emails": {
+    "from": {
+      "default": "noreply@incubie.com"
+    }
+  },
+  "storage": {
+    "s3": {
+      "region": "S3_REGION",
+      "bucket": "S3_BUCKET",
+      "imagesBucket": "S3_IMAGES_BUCKET",
+      "accessKeyId": "S3_ACCESS_KEY_ID",
+      "secretAccessKey": "S3_SECRET_ACCESS_KEY"
+    }
+  },
+  "mongodb": "MONGO_URI"
+}

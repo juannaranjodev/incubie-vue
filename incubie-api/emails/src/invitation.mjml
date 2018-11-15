@@ -1,0 +1,39 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Roboto" />
+  </mj-head>
+  <mj-body>
+    <mj-section background-color="#8CBDD3" padding="8px 0">
+    </mj-section>
+    <mj-section background-color="#454545">
+      <mj-column>
+        <mj-image src="http://res.cloudinary.com/incubie/image/upload/v1523745092/incubie-logo.png" width="120" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-family="Roboto" font-size="24px" line-height="36px">
+          {{fromName}} has invited you to join {{company}} on Incubie.
+        </mj-text>
+        <mj-hero background-color="#454545" padding="32px 0">
+          <mj-button background-color="#8CBDD3" color="white" font-family="Roboto" font-size="18px" href="{{hashLink}}">
+            Accept My Invitation
+          </mj-button>
+        </mj-hero>
+        <mj-text font-family="Roboto" font-size="14px" line-height="21px">
+          <h3>What's Incubie?</h3>
+          <p>
+            Incubie is the space for ideation. It allows you to post any idea you have for whatever projects your company is working on. Your idea will be discussed, and if approved moved into the development lifecycle.
+            <a href="https://incubie.com">Learn more &raquo;</a>
+          </p>
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+
+        <mj-text align="center" font-size="10px" line-height="15px">
+          You received this email because a colleague invited you. Click <a href="#">here</a> to unsubscribe.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

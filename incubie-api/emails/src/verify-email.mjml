@@ -1,0 +1,65 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Roboto"/>
+  </mj-head>
+  <mj-body>
+    <mj-section
+        background-color="#8CBDD3"
+        padding="8px 0">
+    </mj-section>
+    <mj-section
+        background-color="#454545">
+      <mj-column>
+        <mj-image
+            src="http://res.cloudinary.com/incubie/image/upload/v1523745092/incubie-logo.png"
+            width="120"/>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text
+            font-family="Roboto"
+            font-size="24px"
+            line-height="36px">
+          Confirm your email for Incubie
+        </mj-text>
+        <mj-text
+          font-size="14px"
+          line-height="21px">
+          We received a request from this address to join the Incubie community. Welcome! Please click confirm below to get started.
+        </mj-text>
+        <mj-hero
+            background-color="#454545"
+            padding="32px 0">
+          <mj-button
+              background-color="#8CBDD3"
+              color="white"
+              font-family="Roboto"
+              font-size="18px"
+              href="{{hashLink}}">
+            Confirm Email Address
+          </mj-button>
+        </mj-hero>
+        <mj-text
+            font-family="Roboto"
+            font-size="14px"
+            line-height="21px">
+          <h3>Didn't request this email?</h3>
+          <p>
+            Please ignore this email if so.</a>
+          </p>
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey"/>
+
+        <mj-text
+            align="center"
+            font-size="10px"
+            line-height="15px">
+          You received this email because mortems trabem, tanquam domesticus orexis. Click <a href="#">here</a> to
+          unsubscribe.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

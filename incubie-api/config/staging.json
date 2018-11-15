@@ -1,0 +1,13 @@
+{
+  "host": "ec2-18-191-231-61.us-east-2.compute.amazonaws.com",
+  "baseUrl": "http://ec2-18-191-231-61.us-east-2.compute.amazonaws.com",
+  "storage": {
+    "s3": {
+      "region": "us-east-2",
+      "bucket": "incubie-app-staging",
+      "imagesBucket": "incubie-app-staging/images",
+      "accessKeyId": "AKIAIE3QEC2QHLZQBXPA",
+      "secretAccessKey": "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"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 module.exports = {
     stripeOptions: {
-        stripeSecKey: process.env.STRIPE_SEC_KEY || 'sk_live_945xCS6y8JfA0gaUcWlOw5RQ',
-        stripePubKey: process.env.STRIPE_PUB_KEY || 'pk_live_whwTghaQJVQggofyXALYTnQJ',
+        stripeSecKey: process.env.STRIPE_SEC_KEY || 'sk_test_945xCS6y8JfA0gaUcWlOw5RQ',
+        stripePubKey: process.env.STRIPE_PUB_KEY || 'pk_test_whwTghaQJVQggofyXALYTnQJ',
         defaultPlan: 'Free',
         planData: {
             incubieFree: {
